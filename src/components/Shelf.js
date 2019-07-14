@@ -6,6 +6,14 @@ const Shelf = ({
   name,
   items
 }) => {
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    centerMode: true
+  }
 
   const itemBoxes = items.map(item => 
     <Item 
@@ -18,8 +26,10 @@ const Shelf = ({
   return (
     <div className="shelf">
       <h2>{name}</h2>
+      <Slider {...sliderSettings}>
         {itemBoxes}
       </Slider>
+    </div>
   )
 }
 
