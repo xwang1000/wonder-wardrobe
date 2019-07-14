@@ -1,0 +1,13 @@
+.shelf {
+  display: flex;
+}
+
+.shelf-name {
+  width: 10%;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.shelf-slider {
+  width: 90%;
+}
