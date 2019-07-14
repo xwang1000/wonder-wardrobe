@@ -9,7 +9,6 @@ const Item = ({
 }) => {
   return (
     <div className="item">
-      <h2>{occasion}</h2>
       <img src={imageSrc} alt={name}></img>
     </div>
   )
