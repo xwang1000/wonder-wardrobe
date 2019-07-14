@@ -101,6 +101,8 @@ const App = () => {
   return (
     <div className="App">
       <Header />
+      <Shelf name="Tops" items={tops} />
+      <Shelf name="Bottoms" items={bottoms} />
     </div>
   );
 }
