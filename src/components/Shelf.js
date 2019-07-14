@@ -1,13 +1,13 @@
 import React from 'react'
 import Item from './Item'
-import Slider from "react-slick" 
+import Slider from 'react-slick'
+import './Shelf.css'
 
 const Shelf = ({
   name,
   items
 }) => {
   const sliderSettings = {
-    dots: true,
     infinite: true,
     speed: 300,
     slidesToShow: 5,
@@ -25,8 +25,8 @@ const Shelf = ({
   )
   return (
     <div className="shelf">
-      <h2>{name}</h2>
-      <Slider {...sliderSettings}>
+      <h2 className="shelf-name">{name}</h2>
+      <Slider className="shelf-slider" {...sliderSettings}>
         {itemBoxes}
       </Slider>
     </div>
