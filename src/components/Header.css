@@ -1,0 +1,7 @@
+.header {
+  text-align: left;
+  padding: 5px 10px;
+  background-color: var(--dark-purple);
+  color: var(--light-pink);
+  font-size: 12px;
+}
